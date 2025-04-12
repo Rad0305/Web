@@ -6,28 +6,62 @@
     <title>Trai Cay</title>
     <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/js/main.js">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="/assets/fontawesome-free-5.15.4-web/js/all.min.js">
 </head>
 <body>
     <div class="web">
         <header class="header">
-            <nav class="header__navbar">
-                <h1>xin chao</h1>
-                <p> css elemnt</p>
-                <h2>
-                    mmmkasdsdacbb
-                </h2>
+            <div class="logo">
+                <h2>FRUITY</h2>
+            </div>
 
-            </nav>
-            <p>mmmm</p>
+            <div class="search-container">
+                <div class="dropdown-btn" onclick="toggleDropdown()">
+                    <span>Danh mục sản phẩm</span>
+                    <i class="fas fa-caret-down"></i>
+
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#" class="active">Danh mục sản phẩm</a>
+                        <a href="#">Trái Cây Việt</a>
+                        <a href="#">Trái Cây Nhập Khẩu</a>
+                        <a href="#">Trái Cây Sấy</a>
+                    </div>
+                </div>
+                <input type="text" class="search-input" placeholder="Tìm theo tên sản phẩm">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div class="user-actions">
+                <a href="#" class="account">
+                    <i class="fas fa-user icon"></i>
+                    <span>Tài Khoản</span>
+                    <span>Đăng nhập</span>
+                </a>
+
+                <a href="#" class="cart">
+                    <i class="fas fa-shopping-cart icon"></i>
+                    <span class="cart-count">0</span>
+                    <span>Giỏ hàng</span>
+                </a>
+            </div>
         </header>
-        <div class="container">
-            asdhasdau
-        </div>
-        <footer class="footer">
-        </footer>
-        <p>hello cac ban</p>
-        <p> chao câc ban</p>
+        
+        <!-- Navbar -->
+         <nav class="navbar">
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <span>Danh mục sản phẩm</span>
+
+            <div class="nav-links">
+                <a href="#"></a>
+            </div>
+         </nav>
     </div>
 </body>
 </html>
