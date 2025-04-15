@@ -224,6 +224,7 @@
 .banner {
     background: #f9f8f8;
     padding: 40px 0;
+    margin-bottom: 30px;
 }
 
 .banner-title {
@@ -340,8 +341,81 @@
         margin-top: 20px;
     }
 }
+.danhmuc {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    color: #555;
+    font-size: 2rem;
+}
+
+.tab.active {
+    border-bottom: 2px solid #28a745;
+    color: #28a745;
+}
+
+.category {
+    display: none;
+}
+
+.category.active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px; /* Further reduced gap between items */
+}
+
+.product {
+    flex: 0 0 calc(33.33% - 5px); /* Adjusted for smaller gap */
+    margin: 5px 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.product a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.product .price {
+    color: #ff4500;
+    font-weight: bold;
+}
 
 
+/* phần của an */
 /* tin tức và sổ tay */
 .Sotay h1 {
     text-align: center;
@@ -349,6 +423,7 @@
     color: #28a745;
     margin-bottom: 30px;
     font-weight: bold;
+    margin-top: 30px;
 }
 
 .content {
