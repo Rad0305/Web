@@ -4,13 +4,13 @@
     text-decoration: none;
 }
 
-/* header */
 .container{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* header */
 .header{
     background-color: var(--white-color);
     padding: 15px 0;
@@ -219,7 +219,15 @@
     font-weight: bold;
 }
 
-/* banner cua thu */
+/* banner chính */
+.banner-1{
+    background-image: url(/assets/img/bann.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+/* banner của thu */
 /* Banner Section */
 .banner {
     background: #f9f8f8;
@@ -341,6 +349,8 @@
         margin-top: 20px;
     }
 }
+
+/* Danh mục sản phẩm */
 .danhmuc {
     color: #333;
     font-size: 24px;
@@ -417,7 +427,7 @@
 /* banner giảm giá */
 .bannersale {
     background-image: url(/assets/img/bannersale.jpg);
-    background-color: #28a745; /* Màu xanh lá nhạt */
+    background-color: #28a745; 
     background-size: cover;
     background-position: center;
     border-radius: 15px;
@@ -449,7 +459,7 @@
 }
 
 .discount-btn {
-    background-color: #ffd700; /* Màu vàng cho nút giảm giá */
+    background-color: #ffd700;
     color: #000;
     font-size: 18px;
     font-weight: bold;
@@ -461,14 +471,108 @@
 }
 
 .discount-btn:hover {
-    background-color: #ffcc00; /* Hiệu ứng hover */
+    background-color: #ffcc00;
 }
 
+
+/* banner phụ */
+.features{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+.feature-item{
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    min-width: 200px;
+    margin: 10px;
+}
+.feature-icon{
+    font-size: 3.8rem;
+    color: #23b54e;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease;
+}
+.feature-item:hover .feature-icon{
+    transform: rotateY(360deg);
+}
+.feature-title{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.feature-desc{
+    font-size: 1.6rem;
+    color: #777;
+}
+.section-title{
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    position: relative;
+    color: var(--text-color);
+    padding-bottom: 15px;
+}
+.section-title::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background-color: #23b54e;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.product-item{
+    width: 30%;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+}
+.product-item:hover{
+    transform: translateY(-10px);
+}
+.product-image{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    padding: 10px;
+}
+.product-info{
+    padding: 15px;
+    text-align: center;
+}
+.product-name{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-price{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #23b54e;
+}
+
+
 /* phần của an */
-/* tin tức và sổ tay */
+/* Sổ tay*/
 .Sotay h1 {
     text-align: center;
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     color: #28a745;
     margin-bottom: 30px;
     font-weight: bold;
@@ -513,12 +617,13 @@
     line-height: 1.5;
 }
 
+/* Tin tức */
 .tintuc h1 {
     text-align: center;
     color: #28a745;
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     margin-bottom: 20px;
-    margin-top: 50px; /* Tăng khoảng cách phía trên để xa mục "SỔ TAY MẸO VẶT" */
+    margin-top: 50px; 
 }
 
 .content {
@@ -598,11 +703,12 @@
 .footer-header{
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 30px;
 }
 .footer-header h1{
     font-size: 4rem;
     font-weight: bold;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 .footer-header p{
     margin-bottom: 20px;
