@@ -243,7 +243,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    background: #75ce67;
+    background: #23b54e;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -414,6 +414,55 @@
     font-weight: bold;
 }
 
+/* banner giảm giá */
+.bannersale {
+    background-image: url(/assets/img/bannersale.jpg);
+    background-color: #28a745; /* Màu xanh lá nhạt */
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.bannersale-content {
+    text-align: center;
+    color: #fff;
+   
+}
+.bannersale-content p {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #1e452d; 
+}
+
+.bannersale-content h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.discount-btn {
+    background-color: #ffd700; /* Màu vàng cho nút giảm giá */
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.discount-btn:hover {
+    background-color: #ffcc00; /* Hiệu ứng hover */
+}
 
 /* phần của an */
 /* tin tức và sổ tay */
