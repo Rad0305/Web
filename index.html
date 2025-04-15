@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trai Cay</title>
+    <title>Fruity - Cửa hàng trái cây tươi ngon</title>
     <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/js/main.js">
@@ -12,56 +12,186 @@
     <link rel="stylesheet" href="/assets/fontawesome-free-5.15.4-web/js/all.min.js">
 </head>
 <body>
+    
     <div class="web">
         <header class="header">
-            <div class="logo">
-                <h2>FRUITY</h2>
-            </div>
+            <div class="container header-content">
+                <a href="#" class="logo">Fruity</a>
 
-            <div class="search-container">
-                <div class="dropdown-btn" onclick="toggleDropdown()">
-                    <span>Danh mục sản phẩm</span>
-                    <i class="fas fa-caret-down"></i>
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="Tìm kiếm sản phẩm">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
 
-                    <div class="dropdown-content" id="myDropdown">
-                        <a href="#" class="active">Danh mục sản phẩm</a>
-                        <a href="#">Trái Cây Việt</a>
-                        <a href="#">Trái Cây Nhập Khẩu</a>
-                        <a href="#">Trái Cây Sấy</a>
+                <!-- liên hệ -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <div>
+                            <div>Hotline:</div>
+                            <div>19002004</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <div>
+                            <div>Email:</div>
+                            <div>support@fruity.vn</div>
+                        </div>
                     </div>
                 </div>
-                <input type="text" class="search-input" placeholder="Tìm theo tên sản phẩm">
-                <button class="search-btn">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
 
-            <div class="user-actions">
-                <a href="#" class="account">
-                    <i class="fas fa-user icon"></i>
-                    <span>Tài Khoản</span>
-                    <span>Đăng nhập</span>
-                </a>
+                <!-- tài khoản -->
+                <div class="user-actions">
+                   <div class="account-dropdown">
+                        <button class="account-button">
+                            <i class="fas fa-user"></i>
+                            Tài Khoản
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="account-item">Đăng Nhập</a>
+                            <a href="#" class="account-item">Đăng Ký</a>
+                       </div>
+                   </div>
 
-                <a href="#" class="cart">
-                    <i class="fas fa-shopping-cart icon"></i>
-                    <span class="cart-count">0</span>
-                    <span>Giỏ hàng</span>
-                </a>
+                   <!-- giỏ hàng -->
+                    <a href="#" class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
             </div>
         </header>
-        
-        <!-- Navbar -->
-         <nav class="navbar">
-            <div class="menu-icon">
-                <i class="fas fa-bars"></i>
-            </div>
-            <span>Danh mục sản phẩm</span>
 
-            <div class="nav-links">
-                <a href="#"></a>
+        <!-- navbar -->
+        <div class="navbar-wrapper">
+            <div class="navbar" id="navbar">
+                <div class="container">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-links active">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Giới Thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links dropdown-toggle">Sản Phẩm <i class="fas fa-chevron-down"></i></a>
+                            <div class="nav-dropdown">
+                                <a href="#" class="dropdown-item">Trái Cây</a>
+                                <a href="#" class="dropdown-item">Trái Cây Việt</a>
+                                <a href="#" class="dropdown-item">Trái Cây Nhập Khẩu</a>
+                                <a href="#" class="dropdown-item">Trái Cây Khô</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Tin Tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Liên Hệ</a>
+                        </li>
+    
+                        <div class="flash-sale">
+                            <i class="fas fa-bolt"></i>
+                            Flash Sale
+                        </div>
+                    </ul>
+                </div>
             </div>
-         </nav>
+        </div>
+        
+        <div class="banner-1">
+            <img src="/assets/img/Banner-1.png" alt="">
+        </div>
     </div>
+
+    <!-- footer -->
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-header">
+                <h1>FRUITY</h1>
+                <p>CỬA HÀNG TRÁI CÂY TƯƠI NGON</p>
+                <p class="contact">Trụ sở chính:</p>
+                <p class="contact">Hotline: <a href="#">1900 2004</a></p>
+                <p class="contact">Email: <a href="#">fruity@gmail.com</a></p>
+            </div>
+
+            <!-- thông tin -->
+             <div class="footer-content">
+                <div class="footer-column">
+                    <h3>
+                        VỀ CHÚNG TÔI
+                    </h3>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>
+                        TIN KHUYẾN MẠI
+                    </h3>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>
+                        DỊCH VỤ
+                    </h3>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <!-- kết nối  -->
+                <div class="footer-column">
+                    <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+
+                    <div class="newsletter"></div>
+                    <h3>NHẬN TIN KHUYẾN MẠI</h3>
+                    <div class="newsletter-form">
+                        <input type="text" placeholder="Nhập email của bạn">
+                        <button>Đăng Ký</button>
+                    </div>
+                </div>
+             </div>
+        </div>
+     </footer>
+     <div class="end"></div>
+
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>
