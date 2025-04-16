@@ -532,6 +532,7 @@
     margin-bottom: 50px;
 }
 .product-item{
+    color: var(--text-color);
     width: 30%;
     margin-bottom: 30px;
     background-color: #fff;
