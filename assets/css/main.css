@@ -221,10 +221,10 @@
 
 /* banner chính */
 .banner-1{
-    background-image: url(/assets/img/bann.png);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    width: 100%;
+    max-width: 100%;
+    height: 750px;
+    background-image: url(/assets/img/Banner-1.png);
+    background-size: cover;
 }
 
 /* banner của thu */
