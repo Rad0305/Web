@@ -99,7 +99,185 @@
         </div>
     </div>
 
-    <!-- hh -->
+    <!-- thông tin sản phẩm -->
+     <div class="container">
+        <div class="product-section">
+            <div class="product-image">
+                <img src="/assets/img/dautay1.webp" alt="">
+            </div>
+
+            <div class="product-details">
+                <h1 class="product-title">
+                    Dây Tây Hàn Quốc
+                </h1>
+                
+                <div class="product-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Thương hiệu:</span>
+                        <span class="meta-value">Hàn Quốc</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Tình trạng:</span>
+                        <span class="meta-value">Còn hàng</span>
+                    </div>
+                </div>
     
+                <div class="product-price">
+                    <span>199.000 đ</span>
+                </div>
+    
+                <div class="product-info">
+                    <div class="info-item">
+                        <strong>Nguồn gốc:</strong> Hàn Quốc
+                    </div>
+                    <div class="info-item">
+                        <strong>Khối lượng:</strong> 1.0 Kg/hộp
+                    </div>
+                </div>
+    
+                <div class="product-description">
+                    <p>Mùa hè là thời gian lý tưởng để nhâm nhi nhiều loại trái cây và dâu tây trong số những trái ngon và bổ không thể bỏ qua.</p>
+                </div>
+    
+                <div class="quantity-control">
+                    <div class="quantity-btn decrease">-</div>
+                    <input type="text" class="quantity-input" id="quantity" value="1" readonly>
+                    <div class="quantity-btn increase">+</div>
+                </div>
+    
+                <button class="add-to-cart-btn" onclick="addToCart()">
+                    <i class="fas fa-shopping-cart"></i>
+                    Thêm vào giỏ hàng
+                </button>
+            </div>
+         </div>
+     </div>
+     
+     <!-- thêm vào giỏ hàng -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <div class="success">
+                    <i class="fas fa-check"></i>Sản phẩm vừa được thêm vào giỏ hàng 
+                </div>
+                <button class="close-modal" onclick="closeModal()">X</button>
+            </div>
+
+            <div class="cart-item">
+                <div class="cart-item-info">
+                    <img src="/assets/img/dautay1.webp" alt="Dâu tây Hàn Quốc">
+                    <div>Dâu tây Hàn Quốc</div>
+                </div>
+
+                <div class="cart-quantity">
+                    <button class="decrease-cart">-</button>
+                    <input type="text" value="2" id="cartQuantity" readonly>
+                    <button class="increase-carts">+</button>
+                </div>
+
+                <div class="cart-item-price" id="itemPrice">398.000 đ</div>
+            </div>
+
+            <div class="cart-total">
+                <div>GIỎ HÀNG CỦA BẠN (<span id="itemCount">2</span>sản phẩm)</div>
+                <div>Tổng tiền thanh toán: <span id="totalPrice">398.000đ</span> </div>
+            </div>
+
+            <div class="cart-buttons">
+                <button class="view-cart">Tới giỏ hàng</button>
+                <button class="checkout">Tiến hành thanh toán</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="hr"></div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-header">
+                <h1>FRUITY</h1>
+                <p>CỬA HÀNG TRÁI CÂY TƯƠI NGON</p>
+                <p class="contact">Trụ sở chính: 235 Hoàng Quốc Việt, Cổ Nhuế, Bắc Từ Liêm, Hà Nội</p>
+                <p class="contact">Hotline: <a href="#">1900 2004</a></p>
+                <p class="contact">Email: <a href="#">fruity@gmail.com</a></p>
+            </div>
+
+            <!-- thông tin -->
+             <div class="footer-content">
+                <div class="footer-column">
+                    <h3>
+                        VỀ CHÚNG TÔI
+                    </h3>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>
+                        TIN KHUYẾN MẠI
+                    </h3>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>
+                        DỊCH VỤ
+                    </h3>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <!-- kết nối  -->
+                <div class="footer-column">
+                    <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+
+                    <div class="newsletter"></div>
+                    <h3>NHẬN TIN KHUYẾN MẠI</h3>
+                    <div class="newsletter-form">
+                        <input type="text" placeholder="Nhập email của bạn">
+                        <button>Đăng Ký</button>
+                    </div>
+                </div>
+             </div>
+        </div>
+     </footer>
+     <div class="end"></div>
+    
+     <script src="/assets/js/main.js"></script>
+    <script src="./assets/js/dautay.js" defer></script>
 </body>
 </html>
