@@ -695,6 +695,13 @@
     color: #333;
 }
 
+/* đường kẻ */
+.hr{
+    width: 100%;
+    height: 2px;
+    background-color: #23b54e;
+    margin-top: 35px;
+}
 
 /* footer */
 .footer{
