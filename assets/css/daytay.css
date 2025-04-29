@@ -459,6 +459,7 @@
     margin-bottom: 30px;
     position: relative;
     font-size: 3.5rem;
+    margin-bottom: 50px;
 }
 .extra::after{
     content: "";
@@ -504,6 +505,8 @@
     font-size: 2rem;
     color: #1e452d;
 }
+
+/* mô tả và tin tức */
 .tab-container {
     margin-bottom: 30px;
     border-bottom: 1px solid #ddd;
@@ -519,6 +522,56 @@
 .tab-button.active {
     color: #4CAF50;
     border-bottom: 2px solid #4CAF50;
+}
+
+/* thông tin bị ẩn*/
+.tab-content{
+    display: none;
+    padding: 20px 0;
+    line-height: 1.6;
+}
+.tab-content.active{
+    display: block;
+}
+
+/* mô tả và tin tức */
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* mô tả */
+.left-content{
+    width: 100%;
+    padding-right: 20px;
+}
+.main-image{
+    text-align: center;
+    margin: 20px 0;
+}
+.main-image img{
+    max-width: 100%;
+    height: auto;
+}
+.feature{
+    margin-top: 20px;
+}
+.feature li{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* tin tức */
+.right-content{
+    width: 100%;
+}
+.promotions{
+    margin-top: 20px;
+}
+.promotions h2{
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
 }
 
 /* đường kẻ */
