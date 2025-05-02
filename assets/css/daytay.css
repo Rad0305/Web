@@ -460,6 +460,7 @@
     position: relative;
     font-size: 3.5rem;
     margin-bottom: 50px;
+    color: var(--text-color);
 }
 .extra::after{
     content: "";
@@ -476,20 +477,32 @@
 .extra-products{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin: 50px 0;
     flex-wrap: wrap;
+    padding-bottom: 40px;
 }
 .extra-product{
-    width: 30%;
-    padding: 15px;
-    text-align: center;
-    background-color: #f9f9f9;
-    margin-bottom: 20px;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
 }
-.extra-product img{
+.extra-product-image{
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-right: 15px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.extra-product-image img{
     max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
+    max-height: 100%;
+}
+.extra-product-details{
+    flex: 1;
 }
 .extra-product-name{
     font-size: 2rem;
@@ -503,7 +516,8 @@
 }
 .extra-product-price{
     font-size: 2rem;
-    color: #1e452d;
+    color: #23b54e;
+    font-weight: bold;
 }
 
 /* mô tả và tin tức */
@@ -516,7 +530,7 @@
     border: none;
     background: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 2rem;
     font-weight: bold;
 }
 .tab-button.active {
@@ -544,6 +558,7 @@
 .left-content{
     width: 100%;
     padding-right: 20px;
+    font-size: 1.6rem;
 }
 .main-image{
     text-align: center;
@@ -572,6 +587,56 @@
     margin-bottom: 20px;
     position: relative;
     padding-bottom: 15px;
+    font-size: 2rem;
+}
+.promotions h2::after{
+    content: " ";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #23b54e;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.promo-item{
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 20px;
+}
+.promo-image{
+    width: 150px;
+    margin-right: 15px;
+}
+.promo-image img{
+    width: 100%;
+    height: auto;
+}
+.promo-info h3{
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+.promo-info .author, .promo-info .date{
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+    .left-content {
+        width: 70%;
+    }
+    .right-content {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 /* đường kẻ */

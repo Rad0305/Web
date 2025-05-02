@@ -79,3 +79,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Gắn sự kiện cho nút đóng modal
     if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
 });
+
+function openTab(tabName) {
+    //ẩn nội dung tab
+    var tabContents = document.getElementsByClassName("tab-content");
+    for( var i=0; i < tabContents.length; i++){
+        tabContents[i].classList.remove("active");
+    }
+
+    //xóa active từ tất cả nút tab
+    var tabButtons = document.getElementsByClassName("tab-button");
+    for (var i=0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove("active");
+    }
+
+    //hiển thị tab được chọn và kích hoạt nút tương ứng
+    document.getElementById(tabName).classList.add("active");
+
+    //kích hoạt nút 
+    if (tabName === "mo-ta") {
+        document.getElementById("mo-ta-btn").classList.add("active");
+    } else  if (tabName === "thong-tin") {
+        document.getElementById("thong-tin-btn").classList.add("active");
+    }
+}
