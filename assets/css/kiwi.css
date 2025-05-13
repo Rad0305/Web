@@ -284,12 +284,12 @@
     font-size: 2rem;
     color: #666;
     margin-bottom: 5px;
-    line-height: 2rem;
+    line-height: 1.5;
 }
 
 .rating {
     font-size: 2rem;
-    line-height: 2rem;
+    line-height: 1.5;
     color: #f4b400;
     margin-bottom: 10px;
 }
@@ -399,7 +399,7 @@
 }
 
 .add-to-cart:hover {
-    background: #e0a800;
+    background: #1e452d;
 }
 
 /* Tabs */
@@ -424,7 +424,7 @@
 
 .tab-button.active {
     color: #333;
-    border-bottom: 2px solid #f4b400;
+    border-bottom: 2px solid #23b54e;
 }
 
 .tab-content {

@@ -227,17 +227,19 @@
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 40px;
 }
 
 /* Định dạng phần hình ảnh sản phẩm, căn giữa nội dung */
 .product-image {
     flex: 1;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 /* Định dạng hình ảnh chính, giới hạn kích thước và bo góc */
 .main-image {
-    max-width: 300px;
+    max-width: 500px;
     height: auto;
     border-radius: 10px;
 }
@@ -252,8 +254,8 @@
 
 /* Định dạng từng ảnh thu nhỏ, giới hạn kích thước và bo góc */
 .thumbnail {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -268,9 +270,9 @@
 
 /* Định dạng tiêu đề sản phẩm, màu sắc và khoảng cách */
 .product-title {
-    font-size: 24px;
+    font-size: 3.5rem;
     color: #2c3e50;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /* Định dạng meta thông tin sản phẩm, sắp xếp theo cột */
@@ -280,27 +282,33 @@
     gap: 5px;
     margin-bottom: 10px;
     color: #7f8c8d;
+    font-size: 2.4rem;
+    line-height: 1.5;
 }
+
 
 /* Định dạng giá sản phẩm, màu sắc nổi bật và khoảng cách */
 .product-price {
     font-size: 24px;
-    color: #e67e22;
+    color: #23b54e;
     font-weight: bold;
     margin: 10px 0;
 }
 
 /* Định dạng tiêu đề và nội dung mô tả ngắn */
 .short-description h3 {
-    font-size: 18px;
+    font-size: 2.4rem;
     margin-bottom: 10px;
-    color: #2c3e50;
+    color: #333;
+    margin-top: 20px;
 }
 
 .short-description ul {
     list-style-type: disc;
     padding-left: 20px;
-    color: #34495e;
+    color: #333;
+    font-size: 2.4rem;
+    line-height: 1.5;
 }
 
 /* Định dạng phần chọn số lượng, thêm khoảng cách */
@@ -309,9 +317,10 @@
 }
 
 .quantity-section h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #2c3e50;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    color: #333;
+    margin-top: 20px;
 }
 
 .quantity-selector {
@@ -321,8 +330,8 @@
 }
 
 .quantity-btn {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     background-color: #ecf0f1;
     border: 1px solid #ddd;
     cursor: pointer;
@@ -330,26 +339,27 @@
 }
 
 .quantity-input {
-    width: 50px;
-    height: 30px;
+    width: 80px;
+    height: 50px;
     text-align: center;
     border: 1px solid #ddd;
+    font-size: 2.4rem;
 }
 
 /* Định dạng nút thêm vào giỏ hàng, màu sắc và hiệu ứng hover */
 .add-to-cart {
-    background-color: #f1c40f;
+    background-color: #23b54e;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 2.4rem;
     font-weight: bold;
 }
 
 .add-to-cart:hover {
-    background-color: #d4a017;
+    background-color: #1e452d;
 }
 
 /* Định dạng phần chi tiết sản phẩm, thêm khoảng cách phía trên */
@@ -359,7 +369,7 @@
 
 .section-title {
     font-size: 20px;
-    color: #2c3e50;
+    color: #333;
     margin-bottom: 15px;
 }
 
@@ -371,13 +381,15 @@
 .toggle-title {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #2c3e50;
+    color: #333;
     cursor: pointer;
 }
 
 .toggle-content {
     display: none;
     margin-bottom: 20px;
+    font-size: 1.8rem;
+    line-height: 1.5;
 }
 
 /* Định dạng bảng thông số sản phẩm */
@@ -389,9 +401,134 @@
 .product-specs td {
     padding: 10px;
     border: 1px solid #ddd;
-    color: #34495e;
+    color: #333;
 }
 
 .product-specs tr:nth-child(even) {
     background-color: #f9f9f9;
+}
+
+/* đường kẻ */
+.hr{
+    width: 100%;
+    height: 2px;
+    background-color: #23b54e;
+    margin-top: 35px;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    padding: 40px 0;
+    background-color: #fff;
+    color: var(--text-color);
+}
+
+.footer-header{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.footer-header h1{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.footer-header p{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.footer-header .contact{
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+.footer-header .contact a{
+    color: var(--text-color);
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.footer-column{
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+.footer-column h3{
+    color: #23b54e;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.footer-column ul{
+    list-style: none;
+}
+.footer-column ul li{
+    margin-bottom: 15px;
+}
+.footer-column ul li a{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    position: relative;
+    transition: color 0.5s, padding-left 0.5s;
+    display: inline-block;
+}
+.footer-column ul li a:hover{
+    color: #23b54e;
+    padding-left: 5px;
+}
+.social-icons{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+.social-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    background-color: #f5f5f5;
+    transition: all 0.3s;
+    color: #333;
+    font-size: 1.8rem;
+}
+.social-icon:hover{
+    background-color: #23b54e;
+    color: var(--white-color);
+}
+.newsletter{
+    margin-top: 20px;
+}
+.newsletter h3{
+    color: #23b54e;
+    margin-bottom: 15px;
+}
+.newsletter-form{
+    display: flex;
+}
+.newsletter-form input{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+.newsletter-form button{
+    padding: 10px 20px;
+    background-color: #23b54e;
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+}
+
+.end{
+    height: 50px;
+    width: 100%;
+    background-color: #333;
 }
