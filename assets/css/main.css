@@ -616,6 +616,7 @@
     font-size: 1.3rem;
     color: #666;
     line-height: 1.5;
+    text-align: justify;
 }
 
 /* Tin tức */
@@ -654,6 +655,7 @@
     line-height: 1.5;
     flex-grow: 1;
     color: #333;
+    text-align: justify;
 }
 
 .info-sections {
@@ -693,6 +695,7 @@
     font-size: 14px;
     line-height: 1.5;
     color: #333;
+    text-align: justify;
 }
 
 /* đường kẻ */
