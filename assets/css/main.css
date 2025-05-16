@@ -415,12 +415,13 @@
 
 .product p {
     margin: 5px 0;
-    font-size: 14px;
+    font-size: 1.6rem;
     color: #333;
+    font-weight: bold;
 }
 
 .product .price {
-    color: #ff4500;
+    color: #23b54e;
     font-weight: bold;
 }
 
