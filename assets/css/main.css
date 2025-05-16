@@ -652,11 +652,12 @@
 
 .image-description {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.5;
     flex-grow: 1;
     color: #333;
     text-align: justify;
+    background-size: cover;
 }
 
 .info-sections {
@@ -693,7 +694,7 @@
 }
 
 .info-box p {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.5;
     color: #333;
     text-align: justify;

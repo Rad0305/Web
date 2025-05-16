@@ -484,13 +484,12 @@
 .main-image {
     width: 100%;
     height: auto;
-    border: 4px solid #27ae60;
     border-radius: 10px;
 }
 
 .image-description {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.5;
     flex-grow: 1;
     color: #333;
