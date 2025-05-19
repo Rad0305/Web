@@ -273,7 +273,7 @@
 /* Định dạng tiêu đề sản phẩm, màu sắc và khoảng cách */
 .product-title {
     font-size: 3.5rem;
-    color: #2c3e50;
+    color: #333;
     margin-bottom: 15px;
 }
 

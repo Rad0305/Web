@@ -247,8 +247,8 @@
     padding: 30px;
 }
 .product-title{
-    font-size: 2.8rem;
-    margin-bottom: 40px;
+    font-size: 3rem;
+    margin-bottom: 30px;
     color: var(--text-color);
 }
 .product-meta{
